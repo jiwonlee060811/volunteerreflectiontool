@@ -704,7 +704,7 @@ const CHATBOT_TYPE = 'HUGGING_FACE'; // Options: 'RULE_BASED', 'HUGGING_FACE', '
 
 // Hugging Face Configuration (FREE - 1000 requests/month)
 // Get free API token at: https://huggingface.co/settings/tokens
-const HUGGING_FACE_API_KEY = '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'; // API key for more human-like responses
+const HUGGING_FACE_API_KEY = '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'; // API key for more human-like responses
 // Using a more reliable conversational model for better responses
 const HUGGING_FACE_MODEL = 'facebook/blenderbot-400M-distill'; // Reliable conversational model for human-like chat
 
