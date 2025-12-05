@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sightshare Volunteer Reflection Survey - Anonymous feedback tool for volunteers">
+    <title>Sightshare - Volunteer Reflection Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#survey-section" class="skip-link">Skip to main content</a>
+    <div class="container">
+        <header role="banner">
+            <div class="logo-container">
+                <img src="Sightshare_Logo-removebg-preview_2.png" alt="Sightshare Logo" class="sightshare-logo" role="img">
+            </div>
+            <h1><a href="https://www.sightshare.org/" target="_blank" rel="noopener noreferrer" class="header-link" aria-label="Visit Sightshare website">Sightshare</a></h1>
+            <p class="subtitle">Volunteer Reflection & AI-Assisted Feedback Tool</p>
+            <a href="https://www.sightshare.org/" target="_blank" rel="noopener noreferrer" class="visit-website-link" aria-label="Visit Sightshare main website">Visit Sightshare.org →</a>
+        </header>
+
+        <div class="main-content">
+            <!-- Survey Form Section -->
+            <section id="survey-section" class="survey-section" aria-labelledby="survey-heading">
+                <h2 id="survey-heading">Volunteer Reflection Survey</h2>
+                <p class="info-text">This survey is completely anonymous. Your responses help us improve volunteer experiences.</p>
+                
+                <form id="volunteer-survey-form" aria-label="Volunteer reflection survey form">
+                    <div class="form-group">
+                        <label for="volunteer-rating">How was your volunteering experience? *</label>
+                        <div class="rating-scale" role="radiogroup" aria-label="Rating scale from 1 to 5">
+                            <input type="radio" id="rating-1" name="volunteer-rating" value="1" required aria-label="Rating 1 - Poor">
+                            <label for="rating-1" class="rating-label" tabindex="0">1</label>
+                            
+                            <input type="radio" id="rating-2" name="volunteer-rating" value="2" required aria-label="Rating 2">
+                            <label for="rating-2" class="rating-label" tabindex="0">2</label>
+                            
+                            <input type="radio" id="rating-3" name="volunteer-rating" value="3" required aria-label="Rating 3">
+                            <label for="rating-3" class="rating-label" tabindex="0">3</label>
+                            
+                            <input type="radio" id="rating-4" name="volunteer-rating" value="4" required aria-label="Rating 4">
+                            <label for="rating-4" class="rating-label" tabindex="0">4</label>
+                            
+                            <input type="radio" id="rating-5" name="volunteer-rating" value="5" required aria-label="Rating 5 - Excellent">
+                            <label for="rating-5" class="rating-label" tabindex="0">5</label>
+                        </div>
+                        <small>1 = Poor, 5 = Excellent</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="organization">What organization did you work with? *</label>
+                        <select id="organization" name="organization" required aria-required="true">
+                            <option value="">Select organization</option>
+                            <option value="VisionCare USA">VisionCare USA</option>
+                            <option value="VISIONS">VISIONS</option>
+                            <option value="Lighthouse Guild">Lighthouse Guild</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="volunteer-date">When did you volunteer? *</label>
+                        <input type="date" id="volunteer-date" name="volunteer-date" max="" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-type">Are you a high school student or college student? *</label>
+                        <select id="student-type" name="student-type" required aria-required="true">
+                            <option value="">Select student type</option>
+                            <option value="high-school">High School Student</option>
+                            <option value="college">College Student</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Was it your first time volunteering? *</label>
+                        <div class="radio-group" role="radiogroup" aria-label="First time volunteering">
+                            <input type="radio" id="first-time-yes" name="first-time" value="yes" required aria-label="Yes">
+                            <label for="first-time-yes" class="radio-label">Yes</label>
+                            
+                            <input type="radio" id="first-time-no" name="first-time" value="no" required aria-label="No">
+                            <label for="first-time-no" class="radio-label">No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="volunteer-duration">How long did you volunteer for? *</label>
+                        <select id="volunteer-duration" name="volunteer-duration" required aria-required="true">
+                            <option value="">Select duration</option>
+                            <option value="30-minutes">30 minutes</option>
+                            <option value="30-minutes-1-hour">30 minutes - 1 hour</option>
+                            <option value="1-2">1-2 hours</option>
+                            <option value="2-4">2-4 hours</option>
+                            <option value="4-8">4-8 hours</option>
+                            <option value="more-than-8">More than 8 hours</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Was it easy to communicate with visually impaired individuals? *</label>
+                        <div class="radio-group" role="radiogroup" aria-label="Communication ease with visually impaired">
+                            <input type="radio" id="comm-strongly-yes" name="communication-ease" value="strongly-yes" required aria-label="Strongly Yes">
+                            <label for="comm-strongly-yes" class="radio-label">Strongly Yes</label>
+                            
+                            <input type="radio" id="comm-somewhat-yes" name="communication-ease" value="somewhat-yes" required aria-label="Somewhat Yes">
+                            <label for="comm-somewhat-yes" class="radio-label">Somewhat Yes</label>
+                            
+                            <input type="radio" id="comm-medium" name="communication-ease" value="medium" required aria-label="Medium">
+                            <label for="comm-medium" class="radio-label">Medium</label>
+                            
+                            <input type="radio" id="comm-somewhat-no" name="communication-ease" value="somewhat-no" required aria-label="Somewhat No">
+                            <label for="comm-somewhat-no" class="radio-label">Somewhat No</label>
+                            
+                            <input type="radio" id="comm-strongly-no" name="communication-ease" value="strongly-no" required aria-label="Strongly No">
+                            <label for="comm-strongly-no" class="radio-label">Strongly No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>What tasks did you perform? (Select all that apply) *</label>
+                        <div class="checkbox-group" role="group" aria-label="Volunteer tasks">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="task-technology" name="volunteer-tasks" value="technology-support" aria-label="Technology Support">
+                                <label for="task-technology" class="checkbox-label">Technology Support</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="task-walking" name="volunteer-tasks" value="walking-supermarket" aria-label="Walking to Supermarket">
+                                <label for="task-walking" class="checkbox-label">Walking to Supermarket</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="task-arts" name="volunteer-tasks" value="arts-crafts" aria-label="Arts and Crafts">
+                                <label for="task-arts" class="checkbox-label">Arts and Crafts</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="task-reading" name="volunteer-tasks" value="reading-assistance" aria-label="Reading Assistance">
+                                <label for="task-reading" class="checkbox-label">Reading Assistance</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="task-companionship" name="volunteer-tasks" value="companionship" aria-label="Companionship">
+                                <label for="task-companionship" class="checkbox-label">Companionship</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="task-transportation" name="volunteer-tasks" value="transportation" aria-label="Transportation Assistance">
+                                <label for="task-transportation" class="checkbox-label">Transportation Assistance</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="task-education" name="volunteer-tasks" value="education-tutoring" aria-label="Education/Tutoring">
+                                <label for="task-education" class="checkbox-label">Education/Tutoring</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="task-music" name="volunteer-tasks" value="music-lessons" aria-label="Music Lessons">
+                                <label for="task-music" class="checkbox-label">Music Lessons</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="task-other" name="volunteer-tasks" value="other" aria-label="Other">
+                                <label for="task-other" class="checkbox-label">Other</label>
+                            </div>
+                        </div>
+                        <small id="tasks-error" class="error-message" style="display: none; color: #f5576c;">Please select at least one task.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="volunteer-experience">What was memorable about your volunteering experience? *</label>
+                        <textarea id="volunteer-experience" name="volunteer-experience" rows="5" placeholder="Please describe what was memorable about your volunteering experience..." required aria-required="true"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="suggestions">Do you have any suggestions for improvement? (Optional)</label>
+                        <textarea id="suggestions" name="suggestions" rows="4" placeholder="Share any suggestions or feedback..." aria-label="Optional suggestions for improvement"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" aria-label="Submit volunteer reflection survey">Submit Reflection</button>
+                </form>
+            </section>
+
+            <!-- AI Suggestions Section -->
+            <section id="ai-suggestions-section" class="ai-suggestions-section" style="display: none;" aria-labelledby="suggestions-heading">
+                <h2 id="suggestions-heading">AI-Powered Suggestions</h2>
+                <div id="ai-suggestions-content" class="suggestions-content" role="region" aria-live="polite" aria-label="AI-powered suggestions">
+                    <!-- AI suggestions will be displayed here -->
+                </div>
+                <button id="back-to-survey-btn" class="back-btn" aria-label="Return to survey form">Submit Another Reflection</button>
+            </section>
+
+            <!-- Data View Section (for viewing stored responses) -->
+            <section id="data-view-section" class="data-view-section" aria-labelledby="dashboard-heading">
+                <h2 id="dashboard-heading">Volunteer Reflections Dashboard</h2>
+                <div class="dashboard-controls">
+                    <button id="view-data-btn" class="view-btn" aria-label="View all stored volunteer reflections">View All Reflections</button>
+                    <button id="summarize-btn" class="summarize-btn" aria-label="Generate AI summary of all responses">Generate AI Summary</button>
+                    <button id="clear-data-btn" class="clear-btn" aria-label="Clear all stored data">Clear All Data</button>
+                </div>
+                <div id="summary-display" class="summary-display" role="region" aria-live="polite" aria-label="AI-generated summary" style="display: none;">
+                    <!-- AI summary will be displayed here -->
+                </div>
+                <div id="data-display" class="data-display" role="region" aria-live="polite" aria-label="Stored volunteer reflections">
+                    <!-- Stored reflections will be displayed here -->
+                </div>
+            </section>
+
+            <!-- Anonymous Chat Section -->
+            <section id="chat-section" class="chat-section" aria-labelledby="chat-heading">
+                <h2 id="chat-heading">Anonymous Chat Support</h2>
+                <p class="info-text">Have questions or need support? Chat anonymously with our AI assistant.</p>
+                <div id="chat-container" class="chat-container" role="log" aria-label="Chat conversation">
+                    <div id="chat-messages" class="chat-messages" aria-live="polite" aria-label="Chat messages">
+                        <div class="chat-message bot-message" role="article">
+                            <p>Hello! I'm here to help with any questions about volunteering or the survey. How can I assist you today?</p>
+                        </div>
+                    </div>
+                    <div class="chat-input-container">
+                        <label for="chat-input" class="sr-only">Type your message</label>
+                        <input type="text" id="chat-input" class="chat-input" placeholder="Type your message here..." aria-label="Chat message input" autocomplete="off">
+                        <button id="send-chat-btn" class="send-btn" aria-label="Send chat message">Send</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer role="contentinfo">
+            <p>&copy; 2025 <a href="https://www.sightshare.org/" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="Visit Sightshare organization website">Sightshare Organization</a>. All rights reserved.</p>
+            <p class="privacy-note">Your privacy is important to us. All responses are anonymous and stored securely.</p>
+            <p><a href="https://www.sightshare.org/" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="Learn more about Sightshare">Learn more about Sightshare →</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
